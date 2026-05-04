@@ -55,3 +55,25 @@ Es tu primer día en [cinestream.io](http://cinestream.io) y tu Líder Técnico 
 >    - Al terminar: `GET /api/movies/search?q=god` debe devolver películas como "The Godfather".
 
 > Desde ya muchas gracias! Como te comenté en la entrevista, me importa mucho que respetes la arquitectura en capas — no pongas lógica de MongoDB en los controladores. Si terminás antes, dejame una nota en el README con cualquier decisión que hayas tomado.
+
+---
+
+## Instrucciones para la entrega
+
+Si ya terminaste, o son las 10:00, asegurate de seguir los siguientes pasos para la entrega:
+
+1. Completar el listado de endpoints implementados más abajo en este mismo archivo.
+2. Realizar un **commit** a tu repositorio con un mensaje que incluya tu **nombre completo**.
+3. Realizar un **push** a tu repositorio.
+4. Realizar un **pull request** al repositorio original.
+
+## Listado de endpoints implementados
+
+Completá la siguiente tabla con los endpoints que implementaste. Especificá los parámetros si los hubiera.
+
+| Método | Endpoint | Parámetros | Requiere token | Descripción |
+|--------|----------|------------|----------------|-------------|
+| GET | `/api/movies` | `page`, `limit`, `genre` (opcional) | No | Listado de películas paginado |
+| GET | `/api/movies/winners` | — | No | Top 10 películas con más premios |
+| GET | `/api/movies/search` | `q` (texto a buscar) | No | Búsqueda de películas por título |
+| GET | `/api/movies/:id` | `id` (ObjectId) | Sí | Detalle de una película |
