@@ -2,6 +2,8 @@ import { getDb } from "./connection.js";
 import { ObjectId } from "mongodb";
 import bcrypt from "bcrypt";
 
+//Prueba para pull request
+
 // EJEMPLO DE REFERENCIA: esta función implementa paginación con skip/limit.
 // Usala como guía para implementar la paginación en las películas (ejercicio 1).
 // Fórmula: skip = (page - 1) * limit
